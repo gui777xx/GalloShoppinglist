@@ -1,0 +1,17 @@
+GitConfig:
+
+git config --global user.name gui777x
+git config --global user.email guizin.clementino@gmail.com
+
+npx create-expo-app galloShoppingList
+
+cd galloShoppingList
+
+EXPO ROUTER
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+Configurar o Router:
+    - package.json
+    - app.json
+
+npx expo start --localhost --android
