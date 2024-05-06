@@ -49,10 +49,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    fontWeight: "Bold",
+    fontWeight: "bold",
     marginTop: 28,
     marginBottom: 20,
-    textAling: 'center'
+    textAlign: 'center'
   },
 
   Text: {
