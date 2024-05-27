@@ -16,7 +16,7 @@ export default function ItemList({item, markItem, unmarkedItem, removeItem}) {
           
         <TouchableOpacity 
         style={styles.actionIcon}
-        onPress={() => markItem(item)}
+        onPress={() => markItem(item.id)}
       >
           <Ionicons name='bag-check-outline' size={24} color='#fff' />
       </TouchableOpacity>
@@ -24,7 +24,7 @@ export default function ItemList({item, markItem, unmarkedItem, removeItem}) {
           
         <TouchableOpacity 
         style={styles.actionIcon}
-        onPress={() => unmarkItem(item)}
+        onPress={() => unmarkedItem(item.id)}
       >
           <Ionicons name='bag-remove-outline' size={24} color='#fff' />
       </TouchableOpacity>
@@ -33,7 +33,7 @@ export default function ItemList({item, markItem, unmarkedItem, removeItem}) {
 
         <TouchableOpacity 
           style={[styles.actionIcon, {backgroundColor: 'darkred'}]}
-          onPress={() => removeItem(item)}
+          onPress={() => removeItem(item.id)}
         >
             <Ionicons name='trash-bin-outline' size={24} color='#fff' />
         </TouchableOpacity>
